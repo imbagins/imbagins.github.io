@@ -1,8 +1,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #010101;
-    --text: #b02424;
-    --subtext: #24a75f;
+  --bg: #010101;
+    --text: #e52e2e;
+    --subtext: #9dfffc;
     --linktext: #e46c03;
     --underline: #444444;
     --sectionbg: #1c1c1e;

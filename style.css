@@ -1,0 +1,251 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #010101;
+    --text: #b02424;
+    --subtext: #24a75f;
+    --linktext: #e46c03;
+    --underline: #444444;
+    --sectionbg: #1c1c1e;
+    --buttoncolor: #e65252;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #2de4c0;
+    --text: #076a7d;
+    --subtext: #9dfffc;
+    --linktext: #e46c03;
+    --underline: #0e715d;
+    --sectionbg: #ffffff;
+    --buttoncolor: #b7fffd;
+  }
+}
+
+body {
+  font-family: "Helvetica";
+  background-color: var(--bg);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.beauty-rotate {
+  width: 200px;
+  height: 200px;
+  border: 4px double #59e4ee; /* Рамка */
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+} 
+.beauty-rotate:hover {
+  border-radius: 50%;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+     
+
+.header {
+  margin: 30px 0;
+}
+
+.header__me1 {
+  border-radius: 40%;
+}
+
+.header__title {
+  margin: 40px 0 20px 0;
+  font-size: 30px;
+  line-height: 0.5;
+  font-family: "Gilroy";
+}
+
+.header__subtitle {
+  color: var(--subtext);
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0;
+  margin-left: 60px;
+  font-family: "Gilroy";
+}
+
+.links {
+  width: 320px;
+  margin-bottom: 40px;
+  
+}
+
+.links__header {
+  font-family: "Gilroy";
+  font-size: 24px;
+  line-height: 1.4;
+  margin: 0 0 15px 0;
+}
+
+.links__container {
+  list-style-type: none;
+  background: var(--sectionbg);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 20px 10px;
+  gap: 10px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.links__link,
+.links__title {
+  font-size: 14px;
+  font-size: 1.4;
+  color: var(--text)
+}
+
+.links__link {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px 0px 10px;
+  gap: 30px;
+  border-bottom: 1px solid var(--underline);
+  width: 280px;
+}
+
+.links__link:last-child {
+  border-bottom: none;
+}
+
+.linsk__link,
+.links__link:visited {
+  text-decoration: none;
+  color: var(--linktext);
+}
+
+.linsk__link {
+	color: #e46c03; /* Цвет обычной ссылки */
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+.linsk__link:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: rgb(#076a7d); /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.linsk__link:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 1.5px; /* Высота линии */
+    background-color: rgb(1, 150, 176); /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+
+.links__title {
+  margin: 0;
+  min-width: 100px;
+}
+
+
+
+footer {
+  margin: 0 0 40px 0;
+}
+.button-link {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 320px;
+  background: var(--linktext);
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-family: "Gilroy";
+  
+
+  font-size: 16px;
+  line-height: 1.4;
+
+  color: var(--buttoncolor);
+  text-decoration: none;
+
+  
+}
+
+button:hover {
+	background: rgba(0,0,0,0);
+	color: #ffffff;
+	box-shadow: inset 0 0 0 3px #ffffff;
+}
+
+
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 130vh;
+  font-family: "Exo", sans-serif;
+  color: #f9f4f4;
+  background: linear-gradient(-45deg, #de6945, #da2f71, #1c97c3, #19c19a );
+  background-size: 400% 400%;
+  -webkit-animation: gradientBG 10s ease infinite;
+  animation: gradientBG 10s ease infinite;
+}
+.animirovan-gradiyent {
+  width: 100%;
+  position: absolute;
+  top: 35%;
+  text-align: center;
+}
+h1 {
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+  color: #96d8f9;
+}
+
+@-webkit-keyframes gradientBG {
+  0% {
+  background-position: 0% 50%;
+  }
+  50% {
+  background-position: 100% 50%;
+  }
+  100% {
+  background-position: 0% 50%;
+  }
+}
+@keyframes gradientBG {
+  0% {
+  background-position: 0% 50%;
+  }
+  50% {
+  background-position: 100% 50%;
+  }
+  100% {
+  background-position: 0% 50%;
+  }
+}
+
+  

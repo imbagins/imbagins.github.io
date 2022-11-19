@@ -1,4 +1,15 @@
 
+prefers-color-scheme: dark {
+:root {
+   --bg: #2de4c0;
+   --text: #076a7d;
+   --subtext: #9dfffc;
+   --linktext: #e46c03;
+   --underline: #0e715d;
+   --sectionbg: #ffffff;
+   --buttoncolor: #b7fffd;
+}
+}
 
 @media (prefers-color-scheme: light) {
   :root {
